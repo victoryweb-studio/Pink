@@ -9,9 +9,9 @@
   <header class="page-header">
     <a class="page-header__logo logo">PINK</a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть</button>
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
       <ul class="main-nav__list site-list">
-        <li class="site-list__item"><a href="#" class="site-list__link">Главная</a></li>
+        <li class="site-list__item"><a class="site-list__link">Главная</a></li>
         <li class="site-list__item"><a href="#" class="site-list__link">Фотографии</a></li>
         <li class="site-list__item"><a href="#" class="site-list__link">Конкурс</a></li>
         <li class="site-list__item"><a href="#" class="site-list__link">HTML Academy</a></li>
@@ -20,54 +20,63 @@
   </header>
 
   <main class="page-main">
-    <section class="intro">
-      <h1 class="visually-hidden">Приложение для фотографий Pink</h1>
-      <b class="intro__title">Взгляните на жизнь иначе!</b>
+    <h1 class="visually-hidden">Приложение для обработки фотографий PINK</h1>
+    <section class="download-app">
+      <h2 class="visually-hidden">Скачать приложение PINK</h2>
+      <b class="download-app__tagline">Взгляните на жизнь иначе!</b>
       <img src="image/img.png" alt="" class="intro__image">
       <a href="#" class="intro__button button">Скачать приложение</a>
       <div class="device">
-        <ul class="intro__list device__list">
+        <ul class="download-app__list device__list">
           <li class="device__item">
-            <span class="visually-hidden">MacOS</span>
-            <img src="img/mac.svg" alt="">
+            <a href="#" class="device__link">
+              <span class="visually-hidden">MacOS</span>
+              <img src="img/mac.svg" alt="Логотип компании Apple">
+            </a>
           </li>
           <li class="device__item">
-            <span class="visually-hidden">Android</span>
-            <img src="img/android.svg" alt="">
+            <a href="#" class="device__link">
+              <span class="visually-hidden">Android</span>
+              <img src="img/android.svg" alt="Логотип Android">
+            </a>
           </li>
           <li class="device__item">
-            <span class="visually-hidden">Windows</span>
-            <img src="img/windows.svg" alt="">
+            <a href="#" class="device__link">
+              <span class="visually-hidden">Windows</span>
+              <img src="img/windows.svg" alt="Логотип компании Windows">
+            </a>
           </li>
         </ul>
-        <p class="device__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <p class="device__systems">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </div>
     </section>
 
-    <section class="info">
-      <h2 class="visually-hidden">Преимущества</h2>
-      <p class="info__text">Устали от серости мегаполиса?</p>
-      <b class="info__text">Нам есть, что вам предложить!</b>
-      <ul class="info__list">
-        <li class="info__item">
-          <h3 class="info__title">Поднимает настроение</h3>
-          <p class="info__desc">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+    <section class="opportunity">
+      <header class="opportunity__header">
+        <h2 class="visually-hidden">Изменения в вашей жизни, благодаря фото-приложению PINK</h2>
+        <p class="opportunity__recommendation">Устали от серости мегаполиса?</p>
+        <b class="opportunity__recommendation">Нам есть, что вам предложить!</b>
+      </header>
+      <ul class="opportunity__list note-list">
+        <li class="note-list__item">
+          <h3 class="note-list__title">Поднимает настроение</h3>
+          <p class="note-list__desc">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
         </li>
-        <li class="info__item">
-          <h3 class="info__title">Меняет мир вокруг</h3>
-          <p class="info__desc">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        <li class="note-list__item">
+          <h3 class="note-list__title">Меняет мир вокруг</h3>
+          <p class="note-list__desc">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
         </li>
-        <li class="info__item">
-          <h3 class="info__title">Заводит новых друзей</h3>
-          <p class="info__desc">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+        <li class="note-list__item">
+          <h3 class="note-list__title">Заводит новых друзей</h3>
+          <p class="note-list__desc">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
         </li>
       </ul>
-      <img src="img/img.jpg" alt="">
+      <img class="opportunity__image" src="img/img.jpg" alt="Фото телефона">
     </section>
 
     <section class="reviews">
+      <h2 class="visually-hidden">Отзывы о приложении PINK</h2>
       <div class="reviews__wrapper slider">
-        <h2 class="visually-hidden">Отзывы о нас</h2>
         <div class="reviews__list slider__list">
           <blockquote class="reviews__item slider__item">
             <cite class="reviews__author">Николай Петров</cite>
@@ -77,16 +86,16 @@
           </blockquote>
         </div>
         <p class="reviews__toggles slider__toggles">
-          <button class="slider__toggle">1</button>
-          <button class="slider__toggle">2</button>
-          <button class="slider__toggle">3</button>
+          <button class="slider__toggle" type="button">1</button>
+          <button class="slider__toggle" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
         </p>
       </div>
     </section>
 
     <section class="price">
+      <h2 class="visually-hidden">Пакеты услуг для приложения PINK</h2>
       <div class="price__wrapper slider">
-        <h2 class="visually-hidden">Наши тарифы</h2>
         <table class="price__list slider__list">
           <tr>
             <th class="price__title">Базовый
@@ -116,35 +125,33 @@
           </tr>
         </table>
         <p class="price__toggles slider__toggles">
-          <button class="slider__toggle">1</button>
-          <button class="slider__toggle">2</button>
-          <button class="slider__toggle">3</button>
+          <button class="slider__toggle" type="button">1</button>
+          <button class="slider__toggle" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
         </p>
       </div>
     </section>
 
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
-      <p class="contacts__title">Остались вопросы?
+      <p class="contacts__title">Остались вопросы?<br>
         Свяжитесь с нами!</p>
-      <p class="contacts__item">
-        Звоните:
-        <a href="tel:+78125556666" class="contacts__text">
-          +7 (812) 555-66-66
-        </a>
-      </p>
-      <p class="contacts__item">
-        Пишите:
-        <a href="mailto:mail@htmlacademy.ru" class="contacts__text">
-          mail@htmlacademy.ru
-        </a>
-      </p>
-      <p class="contacts__item">
-        Приезжайте в гости:
-        <span class="contacts__text">ул. Большая Конюшенная, 19/8</span>
-      </p>
+      <ul class="contacts__list">
+        <li class="contacts__item">
+          <span class="contacts__action">Звоните:</span>
+          <a href="tel:+78125556666" class="contacts__text">+7 (812) 555-66-66</a>
+        </li>
+        <li class="contacts__item">
+          <span class="contacts__action">Пишите:</span>
+          <a href="mailto:mail@htmlacademy.ru" class="contacts__text">mail@htmlacademy.ru</a>
+        </li>
+        <li class="contacts__item">
+          <span class="contacts__action">Приезжайте в гости:</span>
+          <span class="contacts__text">ул. Большая Конюшенная, 19/8</span>
+        </li>
+      </ul>
       <div class="contacts__map">
-        <img src="img/map.jpg" alt="">
+        <img src="img/map.jpg" alt="Карта">
       </div>
     </section>
   </main>
